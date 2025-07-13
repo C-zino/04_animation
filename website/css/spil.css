@@ -1,0 +1,461 @@
+#screen {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+#game{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#game_background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/baggrund.svg");
+    background-size: cover;
+}
+
+#game_elements{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#game_foreground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/badekar.svg");
+    background-size: cover;
+    pointer-events: none;
+}
+
+#game_ui{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#time_board {
+    position: absolute;
+    top: 3%;
+    left: 25%;
+    width: 13%;
+    aspect-ratio: 300/200;
+    background-image: url(../img/tid10.svg);
+    background-size: cover;
+  }
+
+  #time {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 300/200;
+    background-image: url(../img/tid1.svg);
+    background-size: cover;
+  }
+
+#score_board{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/point.svg");
+    background-size: cover;
+    container-type: inline-size;
+}
+
+#score{
+    position: absolute;
+    top: 3.7%;
+    left: 15.5%;
+    margin: 0;
+    font-size: 3.1cqw;
+}
+
+
+#energy_board{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/liv.svg");
+    background-size: cover;
+    container-type: inline-size;
+}
+
+#energy{
+    position: absolute;
+    font-size: 3.1cqw;
+    top: 9.3%;
+    left: 11.5%;
+    margin: 0;
+}
+
+
+#badeand_container{ 
+    position: absolute;
+    width: 8.5%;
+    aspect-ratio: 250/250;
+    pointer-events: auto;
+}
+
+#badeand_sprite  {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/badeand1.svg");
+    background-size: cover;
+}
+
+#badeand_container1{
+    position: absolute;
+    width: 8.5%;
+    aspect-ratio: 250/280;
+    pointer-events: auto;
+}
+
+#badeand_sprite1{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/badeand2.svg");
+    background-size: cover;
+}
+
+#badeand_container2{
+    position: absolute;
+    width: 8.5%;
+    aspect-ratio: 250/250;
+    pointer-events: auto;
+}
+
+#badeand_sprite2{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/badeand3.svg");
+    background-size: cover;
+} 
+
+#elektronik_container{
+    position: absolute;
+    width: 13%;
+    aspect-ratio: 200/250;
+    pointer-events: auto;
+}
+ 
+#elektronik_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/hartoerre.svg");
+    background-size: cover;
+}
+
+
+#elektronik_container1{
+    width: 10%;
+    aspect-ratio: 150/220;
+    position: absolute;
+    pointer-events: auto;
+}
+
+#elektronik_sprite1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/barbermaskine.svg");
+    background-size: cover;
+}
+
+#elektronik_container2{
+    width: 11%;
+    aspect-ratio: 150/250;
+    position: absolute;
+    pointer-events: auto;
+}
+
+#elektronik_sprite2 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/tandboerste.svg");
+    background-size: cover;
+}  
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .overlay img {
+    width: 65%; 
+  }
+  
+  /* When the overlay is shown */
+  .show-overlay .overlay {
+    opacity: 1;
+  }
+
+.hide {
+  display: none;
+}
+
+
+#start{
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/startskaerm.svg");
+    background-size: cover;
+}
+
+#info{
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/instruktioner.svg");
+    background-size: cover;
+}
+
+#game_over{
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/gameover.svg");
+    background-size: cover;
+}
+
+#level_complete{
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/winner.svg");
+    background-size: cover;
+}
+
+
+#play_btn {
+    width: 23%;
+    aspect-ratio: 400/300;
+    position: absolute;
+    top: 52%;
+    left: 74%; 
+    background-image: url("../img/startsknap.svg");
+    background-size: cover;
+}
+
+#info_btn {
+    width: 23%;
+    aspect-ratio: 400/200;
+    position: absolute;
+    top: 68%;
+    left: 53%; 
+    background-image: url("../img/instruktionsknap.svg");
+    background-size: cover; 
+}
+
+#back_btn {
+    width: 23%;
+    aspect-ratio: 400/200;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    background-image: url("../img/tilbageknap.svg");
+    background-size: cover; 
+}
+
+#playagain_btn {
+    width: 25%;
+    aspect-ratio: 400/200;
+    position: absolute;
+    top: 49%;
+    left: 73%; 
+    background-image: url("../img/proevigen.svg");
+    background-size: cover; 
+}  
+
+#playagain_btn2 {
+    width: 25%;
+    aspect-ratio: 400/200;
+    position: absolute;
+    top: 54%;
+    left: 1%; 
+    background-image: url("../img/proevigen.svg");
+    background-size: cover; 
+}  
+
+
+#mute {
+    position: absolute;
+    width: 4%;
+    aspect-ratio: 1/1;
+    left: 94.5%;
+    top: 1.5%;
+    background-image: url(../img/mute.svg);
+    background-size: contain;
+    pointer-events: auto;
+  }
+
+  #mute_play {
+    position: absolute;
+    width: 4%;
+    aspect-ratio: 1/1;
+    left: 94.5%;
+    top: 1.5%;
+    background-image: url(../img/muteon.svg);
+    background-size: contain;
+    pointer-events: auto;
+  }
+  
+
+/* POSITIONER */
+.pos1 {
+    top: -25%;
+    left: 45%;
+  }
+  .pos2 {
+    top: -25%;
+    left: 55%;
+  }
+  .pos3 {
+    top: -25%;
+    left: 65%;
+  }
+  .pos4 {
+    top: -25%;
+    left: 75%;
+  }
+  .pos5 {
+    top: -25%;
+    left: 85%;
+  }
+
+
+/* ANIMATIONER */
+
+.freeze {
+    animation-play-state: paused;
+}
+
+.falling1 {
+    animation-name: falling;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.falling2 {
+    animation-name: falling;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.falling3 {
+    animation-name: falling;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.falling4 {
+    animation-name: falling;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.falling5 {
+    animation-name: falling;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes falling {
+    0% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(900%);
+    }
+}
+
+.fade_rotate {
+    animation: rotateAndFade 1s forwards;
+}
+
+@keyframes rotateAndFade {
+    from {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    to {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+.shake {
+    animation: shake 1.5s forwards; 
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); opacity: 1; }
+    5% { transform: rotate(-20deg); }
+    10% { transform: rotate(20deg); }
+    15% { transform: rotate(-20deg); }
+    20% { transform: rotate(20deg); }
+    25% { transform: rotate(-20deg); }
+    30% { transform: rotate(20deg); }
+    95% { transform: rotate(0deg); opacity: 0; }
+    100% { transform: rotate(0deg); opacity: 0; }
+}
+
+.time-goes {
+  animation: time-goes 15s linear both;
+  clip-path: inset(0 0 0 0);
+}
+
+@keyframes time-goes { 
+    0% {
+      clip-path: inset(45% 0 0 0);
+    }
+    100% {
+      clip-path: inset(79.6% 0 0 0);
+    }
+  }

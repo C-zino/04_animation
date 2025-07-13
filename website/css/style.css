@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: proza libre, serif;
+  font-weight: 100;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2 {
+    padding-top: 50px;
+}
+
+h3 {
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(52, 143, 255);
+  margin: 0 auto;
+  padding: 15px;
+  font-family: roboto, serif;
+  color: #000674;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 0.5cm;
+}
+
+@media (width >= 768px) {
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly;}
+}
+
+@media (width <= 740px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+  font-family: proza libre, serif;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #0d00ff;
+}
+
+main {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 0.5cm;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0.5cm;
+}
+
+.spilknap {
+    background-color: rgb(52, 143, 255);
+    max-width: 400px;
+    border-radius: 50px;
+}
+
+.mellemgrund{
+  background-color: rgb(52, 143, 255);
+  border-radius: 50px;
+}
+
+.element {
+    max-width: 250px;
+    padding: 30px;
+}
+
+.tid {
+    background-color: rgb(52, 143, 255);
+    max-width: 200px;
+    border-radius: 50px;  
+}
+
+.imglille {
+max-width: 500px;
+}
+
+.imgmellem {
+  max-width: 800px;
+  }
+
+  .imgstor {
+    max-width: 1000px;
+    }
+
+main#grafik {
+  text-align: center; 
+}
+
+main#forside {
+  text-align: center; 
+}
+
+main#teknik {
+  text-align: center; 
+}
+
+.button {
+  background-color: #040DBF;
+  color: #ffffff;
+  padding: 20px 60px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: proza libre, serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.button_div {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+#forside h3 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.audio-container {
+  margin: 20px 0;
+}
+
+audio {
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}

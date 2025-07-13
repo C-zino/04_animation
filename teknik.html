@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Gå Glad I Bad - Teknik</title>
+    <link rel="stylesheet" href="../website/css/style.css" />
+    <link rel="stylesheet" href="../04_animation/website/css/style.css" />
+    <link
+      rel="icon"
+      href="../04_animation/website/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../04_animation/index.html"> Forside</a></li>
+          <li><a href="../04_animation/spil.html"> Spil</a></li>
+          <li><a href="../04_animation/assets.html"> Assets</a></li>
+          <li><a href="../04_animation/teknik.html"> Teknik</a></li>
+          <li><a href="../04_animation/grafik.html"> Grafik</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="teknik">
+      <h1>Teknik</h1>
+
+      <article>
+        <h2>Aktivitetsdiagram</h2>
+        <p>
+          Her er et aktivitetsdiagram over min spilopbygning. Denne bruges til
+          at tydeliggøre hvad selve ideen med spillet og des spilleregler er.
+        </p>
+
+        <img
+          class="imgmellem"
+          src="../04_animation/website/grafik/aktivitetsdiagram.png"
+          alt="aktivitetsdiagram"
+        />
+      </article>
+
+      <article>
+        <h2>State Machine Diagram</h2>
+
+        <p>
+          Her er et state machine diagram over mit spil. <br />
+          Diagrammet beskriver spillets flow og handlinger gennem en state
+          machine, der viser de forskellige tilstande (states) og overgangene
+          mellem dem. Hver state repræsenterer et trin i spillet, fra start til
+          slut, hvor overgange styres af brugerens handlinger og spillets
+          interne logik. Når spillet loader, vises startskærmen. Spilleren kan
+          vælge at starte spillet, hvor point og liv nulstilles, og animationer
+          begynder. Badeænder og elektronik falder, og spilleren skal klikke på
+          badeænder for at få point, mens klik på elektronik resulterer i tab af
+          liv og point.
+        </p>
+
+        <p>
+          Hvis spilleren mister alle liv eller tiden løber ud, tjekkes
+          pointstatus: <br />
+          Ved 100+ point vinder spilleren, ellers taber de. Afhængigt af
+          resultatet vises enten en “Win” eller “Game Over”-skærm, hvor
+          spilleren kan vælge at prøve igen. <br />Alt styres af animationer,
+          lyde og interaktioner i realtid.
+        </p>
+
+        <img
+          src="../04_animation/website/img/gladIbad.svg"
+          alt="aktivitetsdiagram"
+        />
+      </article>
+    </main>
+
+    <footer>
+      <p>&#169;Celina Sguazzino</p>
+    </footer>
+  </body>
+</html>
